@@ -27,7 +27,7 @@ class Database implements DatabaseInterface
     /**
      * Debug flag for check SQL
      */
-    var bool $DEBUG = false;
+    private bool $DEBUG = false;
 
     public function __construct(mysqli $mysqli)
     {
