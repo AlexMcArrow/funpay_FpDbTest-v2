@@ -24,6 +24,9 @@ class Database implements DatabaseInterface
      */
     const AVALIBLE_TYPES = ['#', 'a', 'f', 'd'];
 
+    /**
+     * Debug flag for check SQL
+     */
     var bool $DEBUG = false;
 
     public function __construct(mysqli $mysqli)
@@ -31,6 +34,9 @@ class Database implements DatabaseInterface
         $this->mysqli = $mysqli;
     }
 
+    /**
+     * Set DEBUG into TRUE
+     */
     public function _set_debug()
     {
         $this->DEBUG = true;
